@@ -10,12 +10,12 @@ We provide a range of pre-trained AI models optimized for various inference task
 |------|------|
 | Meta-Llama-3-8B-Instruct | 8K |
 | Mistral-7B-Instruct | 8K |
-| Krutrim-Spectre-v2 | 4K |
+| Krutrim-spectre-v2 | 4K |
 
 ## Krutrim API Keys
 Getting started with our AI Cloud Inference Services is easy! Follow these steps to quickly set up and start using our platform:
 
-- **Sign up**: Register for an account on our platform to get access to the AI Cloud Inference Services
+- **Sign up**: Register for an [account](https://cloud.olakrutrim.com) on our platform to get access to the AI Cloud Inference Services
 - **API Keys**: Obtain API keys or credentials required for authentication.
 
 
@@ -69,7 +69,7 @@ export API_KEY='your-api-key'
 The Krutrim OpenAI SDK demonstrates interaction with the krutrim hosted inference services using OpenAI SDK. To execute the sample, use the following command
 
 ```bash
-python3 openai_sdk.py
+python3 krutrim_openai_sdk.py
 ```
 
 ## Krutrim API
@@ -82,7 +82,7 @@ curl https://cloud.olakrutrim.com/v1/chat/completions \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer <KRUTRIM_API_KEY>" \
   -d '{
-    "model": "krutrim",
+    "model": "Krutrim-spectre-v2",
     "messages": [
       {
         "role": "system",
