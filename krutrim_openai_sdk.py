@@ -15,7 +15,7 @@ client = OpenAI(
 
 # Create a chat completion request with the specified model and messages
 completion = client.chat.completions.create(
-  model="Meta-Llama-3-8B-Instruct",
+  model=os.getenv('MODEL'),
   messages=[
     {"role": "system", "content": "You are a helpful assistant. Helps writing answers about Indian History."},
     {"role": "user", "content": "Please write an essay about Indian Independence."}
