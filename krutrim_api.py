@@ -17,7 +17,7 @@ headers = {"Authorization": f"Bearer {key}"}
 
 # Data payload for the API request
 data = {
-    'model': 'Meta-Llama-3-8B-Instruct',
+    'model': os.getenv('MODEL'),
     'messages': [{"role": "user", "content": "write an email in tamil"}],
     'temperature': 0,
     'max_tokens': 52,
