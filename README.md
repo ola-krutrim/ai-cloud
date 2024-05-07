@@ -94,7 +94,6 @@ curl https://cloud.olakrutrim.com/v1/chat/completions \
       }
     ],
     "frequency_penalty": 0,
-    "logit_bias": {2435:-100, 640:-100},
     "logprobs": true,
     "top_logprobs": 2,
     "max_tokens": 256,
